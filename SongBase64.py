@@ -14,9 +14,7 @@ def DivideSixandEncodeBase64(binaryValue):
     res = []
     for x in range(len(binaryValue)):
         li.append(int(binaryValue[x]))
-    for y in range(0,len(binaryValue),6) :
-        divide = binaryValue[y:y+6]
-        returnValue = int(binaryValue[y:y+6], 2)
+    for y in range(0, len(binaryValue), 6):
         num = int(binaryValue[y:y+6], 2)
         if num <= 25:
             res.append(chr(num+65))
